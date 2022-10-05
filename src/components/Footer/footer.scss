@@ -29,9 +29,47 @@
         .social-icons{
             width: 100%;
             justify-content: space-evenly;
-             margin: 3.5rem auto;
+            margin: 3.5rem auto;
 
         }
     }
 
+}
+
+@media only screen and (min-width:940px){
+    .footer{
+       width: 80%;
+       margin:1rem auto;
+        .top-row{
+            width: 100%;
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+
+            h2{
+                margin: 0;
+            }
+
+            .icons{
+                margin: 0;
+            }
+        }
+        .bottom-row{
+            width: 100%;
+            display: flex;
+            margin: 1.5rem auto;
+            justify-content: space-between;
+            p{
+                margin: 0 .2rem;
+            }
+            .imps{
+                display: none;
+                margin: 0;
+            }
+            .social-icons{
+                width: fit-content;
+                margin: 0;
+            }
+        }
+    }
 }

@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <div className="divider"></div>
       <DetailsSection />
+      <div className="divider"></div>
       <Footer />
     </div>
   );
