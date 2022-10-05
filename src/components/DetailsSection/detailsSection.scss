@@ -1,0 +1,68 @@
+.details-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .left-col{
+        img{
+            width: 50%;
+            margin: 1rem auto;
+        }
+    }
+
+    .right-col{
+        text-align: center;
+        
+        h2{
+ 
+            margin:2.5rem auto;
+        }
+        
+    };
+}
+
+@media only screen and (min-width:940px){
+    .details-section{
+        flex-direction: row;
+        align-items:center;
+        .left-col{
+            img{
+                width: 70%;
+                margin: 1rem 1rem;
+            }
+        }
+        .right-col{
+            h2{
+                width: 280px;
+                font-size: 2.5rem;
+                margin: 2rem auto auto 0;
+            }
+            text-align: left;
+
+            .download-btn{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1170px){
+   .details-section{
+    align-items: center;
+      .left-col{
+        img{
+         width: 417px;
+        }
+      }
+      .right-col{
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        align-items: center;
+        p{
+           width: 526px; 
+        }
+        
+      }
+   }
+}

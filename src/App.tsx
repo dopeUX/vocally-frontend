@@ -4,6 +4,8 @@ import "./App.css";
 import "./GlobalStyles/globalStyles.css";
 import Header from "./components/Header/Header.component";
 import Hero from "./components/Hero/Hero.component";
+import DetailsSection from "./components/DetailsSection/DetailsSection";
+import Footer from "./components/Footer/Footer.component";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Hero />
       <div className="divider"></div>
+      <DetailsSection />
+      <Footer />
     </div>
   );
 }

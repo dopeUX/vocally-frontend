@@ -1,0 +1,39 @@
+.footer {
+  display: block;
+}
+
+.footer .top-row h2 {
+  margin: 1rem auto;
+}
+
+.footer .top-row .icons {
+  margin: 1.5rem auto;
+}
+
+.footer .bottom-row p {
+  margin: 2rem auto;
+}
+
+.footer .bottom-row .imps {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.footer .bottom-row .imps small {
+  cursor: pointer;
+  margin: auto 2rem;
+}
+
+.footer .bottom-row .social-icons {
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 3.5rem auto;
+}
+/*# sourceMappingURL=footer.css.map */
