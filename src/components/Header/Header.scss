@@ -1,0 +1,53 @@
+header{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+
+    h1{
+       font-size: 1.5rem; 
+       float: left;
+    //    margin-left: 1rem;
+    }
+
+  .right-col{
+    display: none;
+    width: fit-content;
+  }  
+}
+
+@media only screen and (min-width:650px){
+  header{
+
+    .right-col{
+      display: flex;
+
+      button{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:780px){
+  header{
+
+    .right-col{
+      display: flex;
+
+      button{
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:900px){
+   header{
+    padding:30px 50px;
+   }
+
+}

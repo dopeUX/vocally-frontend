@@ -1,0 +1,133 @@
+.hero{
+    text-align: center;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+
+    .left-col{
+        width: fit-content;
+    }
+    h2{
+        width: fit-content;
+    //  font-size: 1rem;
+    }
+    
+    .detail-form {
+      display: block;
+      
+      input{
+        padding:.8rem 1rem;
+        width: 70%;
+        border: 2px solid #656565;
+        // display: block;
+      }
+
+      button{
+        padding:.8rem 1rem;
+        width: 75%;
+        margin-top: 1rem;
+        background-color: transparent;
+
+        &:hover{
+           background-color: rgb(223, 70, 210); 
+        }
+      }
+    }
+
+    img{
+        width: 85%;
+        margin:4rem auto;
+    }
+    
+    .social-icons{
+        display: flex;
+        width: fit-content;
+        margin:2rem auto;
+       img{
+        width: 30px;
+        height: 30px;
+        margin: auto .5rem;
+       } 
+    }
+}
+
+@media only screen and (min-width:610px){
+    .hero{
+        position: relative;
+        .left-col{
+            h2{
+                margin: auto 2rem;
+                font-size: 2.2rem;
+            }
+            p{
+                margin: 1.5rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:940px){
+    .hero{
+        box-sizing: border-box;
+        // display: flex;
+        // flex-direction: row;
+        position: relative;
+        .left-col{
+            width: fit-content;
+            text-align: left;
+            // float: left;
+            h2{
+               font-size: 2.3rem;
+               width: 500px;
+            }
+            p{
+                width: 400px;
+            }
+
+            .detail-form{
+                margin-left: 2rem;
+                display: flex;
+                width: fit-content;
+                flex-direction: column;
+                input{
+                    margin-left: 0;
+                    width: 300px;
+                }
+                button{
+                   width: 335px;
+                }
+            }
+        }
+
+        .right-col{
+            width: fit-content;
+            // float: right;
+            right: 0;
+            top: 5rem;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            img{
+                // display: inline;
+                width: 50%;
+                margin-right: 4rem;
+                margin-top: 0;
+            }
+
+            .social-icons{
+                margin-right: 6rem;
+                width:fit-content;
+                display: flex;
+
+                img{
+                    margin: 10px;
+                }
+            }
+        }
+
+      
+
+        
+    }
+}
