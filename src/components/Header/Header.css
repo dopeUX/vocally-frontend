@@ -10,7 +10,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -38,22 +37,25 @@ header .right-col {
   }
 }
 
-@media only screen and (min-width: 780px) {
-  header .right-col {
+@media only screen and (min-width: 900px) {
+  .head {
+    padding: 30px 3rem;
+  }
+  .head .right-col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header .right-col button {
+  .head .right-col button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-@media only screen and (min-width: 900px) {
-  header {
-    padding: 30px 50px;
+@media only screen and (min-width: 1400px) {
+  .head {
+    padding: 30px 7rem;
   }
 }
 /*# sourceMappingURL=Header.css.map */

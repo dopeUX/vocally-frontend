@@ -3,6 +3,7 @@
     width: 100%;
     display: block;
     box-sizing: border-box;
+    position: relative;
 
     .left-col{
         width: fit-content;
@@ -34,21 +35,25 @@
       }
     }
 
-    img{
-        width: 85%;
-        margin:4rem auto;
+    .right-col{
+        position: relative;
+        display: block;
+         img{
+            width: 80%;
+            margin:4rem auto;
+        }
+        .icons{
+            width: fit-content;
+            margin: 0 auto;
+
+            img{
+                margin: 0 1rem;
+            }
+        }
+
     }
+ 
     
-    .social-icons{
-        display: flex;
-        width: fit-content;
-        margin:2rem auto;
-       img{
-        width: 30px;
-        height: 30px;
-        margin: auto .5rem;
-       } 
-    }
 }
 
 @media only screen and (min-width:610px){
@@ -64,15 +69,22 @@
                 font-size: 1rem;
             }
         }
+
+        .right-col{
+            margin-top: 2rem;
+          .image1{
+            width: 100%;
+          }
+        }
     }
 }
 
 @media only screen and (min-width:940px){
     .hero{
         box-sizing: border-box;
-        // display: flex;
+        display: flex;
         // flex-direction: row;
-        position: relative;
+        // position: relative;
         .left-col{
             width: fit-content;
             text-align: left;
@@ -102,32 +114,45 @@
 
         .right-col{
             width: fit-content;
-            // float: right;
-            right: 0;
-            top: 5rem;
+            float: right;
+            margin-top: 3rem;
+            // margin-left: 3rem;
             display: flex;
             flex-direction: column;
-            position: absolute;
+            // position: absolute;
             img{
                 // display: inline;
-                width: 50%;
+                width: 100%;
                 margin-right: 4rem;
                 margin-top: 0;
             }
 
-            .social-icons{
-                margin-right: 6rem;
-                width:fit-content;
-                display: flex;
-
-                img{
-                    margin: 10px;
-                }
-            }
+    
         }
 
       
 
         
     }
+}
+
+@media only screen and (min-width:1400px){
+
+  .hero{
+    padding-left:5rem;
+    padding-right: 5rem;
+    .right-col{
+        margin: auto;
+    //    margin-right: 4rem;
+    //    margin-left: auto;
+        .image1{
+            width:700px;
+        }
+
+        .icons{
+            margin-left: auto;
+            margin-right: 2rem;
+        }
+    }
+  }
 }

@@ -4,6 +4,7 @@
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
 .hero .left-col {
@@ -39,25 +40,25 @@
   background-color: #df46d2;
 }
 
-.hero img {
-  width: 85%;
+.hero .right-col {
+  position: relative;
+  display: block;
+}
+
+.hero .right-col img {
+  width: 80%;
   margin: 4rem auto;
 }
 
-.hero .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero .right-col .icons {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
-.hero .social-icons img {
-  width: 30px;
-  height: 30px;
-  margin: auto .5rem;
+.hero .right-col .icons img {
+  margin: 0 1rem;
 }
 
 @media only screen and (min-width: 610px) {
@@ -72,13 +73,21 @@
     margin: 1.5rem 2rem;
     font-size: 1rem;
   }
+  .hero .right-col {
+    margin-top: 2rem;
+  }
+  .hero .right-col .image1 {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 940px) {
   .hero {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .hero .left-col {
     width: -webkit-fit-content;
@@ -117,8 +126,8 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    right: 0;
-    top: 5rem;
+    float: right;
+    margin-top: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -126,24 +135,28 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
   }
   .hero .right-col img {
-    width: 50%;
+    width: 100%;
     margin-right: 4rem;
     margin-top: 0;
   }
-  .hero .right-col .social-icons {
-    margin-right: 6rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
-  .hero .right-col .social-icons img {
-    margin: 10px;
+  .hero .right-col {
+    margin: auto;
+  }
+  .hero .right-col .image1 {
+    width: 700px;
+  }
+  .hero .right-col .icons {
+    margin-left: auto;
+    margin-right: 2rem;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

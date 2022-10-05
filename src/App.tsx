@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <div className="divider"></div>
     </div>
   );
 }

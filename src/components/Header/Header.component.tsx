@@ -6,7 +6,7 @@ interface HeaderProps extends React.HTMLProps<HTMLHeadElement> {}
 
 const Header: React.FC<HeaderProps> = ({}) => {
   return (
-    <header>
+    <header className="container head">
       <h1>OpenAuto</h1>
       <div className="right-col">
         <IconComponent image="assets/call.svg" label="+769 586 4558" />

@@ -1,4 +1,5 @@
 import React from "react";
+import SocialIcons from "../SocialIcons/SocialIcons";
 import "./Hero.css";
 
 interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -30,13 +31,9 @@ const Hero: React.FC<HeroProps> = ({}) => {
         </div>
       </div>
       <div className="right-col">
-        <img src="assets/image1.png" alt="" />
-        <div className="social-icons">
-          <img className="icon" src="assets/fb.svg" alt="" />
-          <img className="icon" src="assets/twitter.svg" alt="" />
-          <img className="icon" src="assets/youtube.svg" alt="" />
-          <img className="icon" src="assets/linkedin.svg" alt="" />
-          <img className="icon" src="assets/insta.svg" alt="" />
+        <img className="image1" src="assets/image1.png" alt="" />
+        <div className="icons">
+          <SocialIcons />
         </div>
       </div>
     </section>

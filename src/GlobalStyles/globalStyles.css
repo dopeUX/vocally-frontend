@@ -49,4 +49,10 @@ input {
   margin: 1rem auto;
   outline: none;
 }
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background-color: #a7a7a7;
+}
 /*# sourceMappingURL=globalStyles.css.map */

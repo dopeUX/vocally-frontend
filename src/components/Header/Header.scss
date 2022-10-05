@@ -4,7 +4,7 @@ header{
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  // padding-left: 2rem;
   box-sizing: border-box;
 
     h1{
@@ -21,10 +21,8 @@ header{
 
 @media only screen and (min-width:650px){
   header{
-
     .right-col{
       display: flex;
-
       button{
         display: none;
       }
@@ -32,9 +30,9 @@ header{
   }
 }
 
-@media only screen and (min-width:780px){
-  header{
-
+@media only screen and (min-width:900px){
+  .head{
+    padding: 30px 3rem;
     .right-col{
       display: flex;
 
@@ -45,9 +43,8 @@ header{
   }
 }
 
-@media only screen and (min-width:900px){
-   header{
-    padding:30px 50px;
-   }
-
+@media only screen and (min-width:1400px){
+  .head{
+    padding: 30px 7rem;
+  }
 }
