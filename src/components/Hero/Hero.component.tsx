@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import createUser from "../../apis/createUser";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import "./Hero.css";
@@ -6,10 +6,13 @@ import "./Hero.css";
 interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const Hero: React.FC<HeroProps> = ({}) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
   useEffect(() => {
-    createUser("testuser2", "testuser2@mail.com").then((res) => {
-      console.log(res);
-    });
+    // createUser("testuser2", "testuser2@mail.com").then((res) => {
+    //   console.log(res);
+    // });
   }, []);
   return (
     <section className="hero container">
@@ -26,14 +29,32 @@ const Hero: React.FC<HeroProps> = ({}) => {
             type="text"
             className="text-box"
             placeholder="Enter your name"
+            value={name}
+            onChange={(e) => {
+              setName(e.currentTarget.value);
+            }}
           />
           <input
             type="text"
             className="text-box"
             placeholder="Enter your email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.currentTarget.value);
+            }}
           />
 
-          <button className="submit">Submit</button>
+          <button
+            className="submit"
+            onClick={() => {
+              createUser(name, email).then((res) => {
+                console.log({ res: res.data.stats, user: res.data.user });
+                alert("user created");
+              });
+            }}
+          >
+            Submit
+          </button>
         </div>
       </div>
       <div className="right-col">
