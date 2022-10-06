@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import createUser from "../../apis/createUser";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import "./Hero.css";
 
 interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const Hero: React.FC<HeroProps> = ({}) => {
+  useEffect(() => {
+    createUser("testuser2", "testuser2@mail.com").then((res) => {
+      console.log(res);
+    });
+  }, []);
   return (
     <section className="hero container">
       <div className="left-col">
